@@ -29,11 +29,13 @@ public class DbUtil {
         return connection;
     }
 
+    //singleton design pattern
     public static DbUtil getInstance() {
         if (INSTANCE == null) {
             INSTANCE = new DbUtil();
         }
-
         return INSTANCE;
     }
+    //singleton design pattern END
 }
+//20 és 60 actoor_id között rekordok
